@@ -11,16 +11,6 @@ export const cssLoader = {
     loader: 'css-loader',
 };
 
-export const postCssLoader = {
-    loader: 'postcss-loader',
-    options: {
-        postcssOptions: {
-            config: join(webpackDir, './config/postcss.js'),
-        },
-        sourceMap: true,
-    },
-};
-
 /***
  * Using MiniCssExtractPlugin in production or style-loader in development
  * @see https://webpack.js.org/plugins/mini-css-extract-plugin/#root
